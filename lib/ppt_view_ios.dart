@@ -1,4 +1,4 @@
-
+//@dart=2.9
 import 'dart:async';
 
 import 'package:flutter/services.dart';
@@ -17,10 +17,10 @@ class PptViewIos extends StatefulWidget{
 
   PptViewIos(
       {
-        required this.filePath,
-        required this.openSuccess,
-        required this.loadingWidget,
-        required this.unSupportFileWidget});
+        this.filePath,
+        this.openSuccess,
+        this.loadingWidget,
+        this.unSupportFileWidget});
 
 
 
@@ -33,7 +33,7 @@ class PptViewIos extends StatefulWidget{
 class _FileReaderViewState extends State<PptViewIos> {
   FileReader fileReader=FileReader();
   FileReaderState _status = FileReaderState.LOADING_ENGINE;
-  late String filePath;
+  String filePath;
 
   @override
   void initState() {
