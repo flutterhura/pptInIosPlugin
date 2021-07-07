@@ -16,12 +16,12 @@ class PptViewIos extends StatefulWidget{
   final Widget unSupportFileWidget;
 
   PptViewIos(
-      {required Key key,
+      {
         required this.filePath,
         required this.openSuccess,
         required this.loadingWidget,
-        required this.unSupportFileWidget})
-      : super(key: key);
+        required this.unSupportFileWidget});
+
 
 
   @override
