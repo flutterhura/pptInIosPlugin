@@ -67,6 +67,7 @@ class _FileReaderViewState extends State<PptViewIos> {
 
   @override
   Widget build(BuildContext context) {
+    return _createIosView();
     if (Platform.isAndroid || Platform.isIOS) {
       if (_status == FileReaderState.LOADING_ENGINE) {
         return _loadingWidget();
