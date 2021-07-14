@@ -2,7 +2,7 @@ import Flutter
 import UIKit
 
 
-let supportFileType = ["docx","doc","xlsx","xls","pptx","ppt","pdf","txt","jpg","jpeg","png"]
+let supportFileType = ["docx","doc","xlsx","xls","pptx","ppt","pdf","txt","jpg","jpeg","png","rtf"]
 
 public func isSupportOpen(fileType:String) -> Bool {
     if supportFileType.contains(fileType.lowercased()) {
